@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/../../.." />
+    <content url="file://$MODULE_DIR$/../../..">
+      <sourceFolder url="file://$MODULE_DIR$/.." isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../elementor-pro" isTestSource="false" packagePrefix="ElementorPro" />
+      <sourceFolder url="file://$MODULE_DIR$/../elementor/includes" isTestSource="false" packagePrefix="Elementor" />
+      <sourceFolder url="file://$MODULE_DIR$/../hmd-elementor-addon/inc" isTestSource="false" packagePrefix="HMD_ELEMENTOR_ADDON" />
+      <sourceFolder url="file://$MODULE_DIR$/../hmd-lp-sms/inc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hmd-lp-sms/inc" isTestSource="false" packagePrefix="HMD_LP_SMS" />
+      <sourceFolder url="file://$MODULE_DIR$/inc" isTestSource="false" packagePrefix="HMD_SLIDER" />
+      <sourceFolder url="file://$MODULE_DIR$/../woocommerce/packages/action-scheduler/classes" isTestSource="false" packagePrefix="Action_Scheduler" />
+      <sourceFolder url="file://$MODULE_DIR$/../wp-holoo-api/inc" isTestSource="false" packagePrefix="WP_HOLOO_API" />
+      <sourceFolder url="file://$MODULE_DIR$/../wp-holoo-api/inc/method" isTestSource="false" packagePrefix="WP_HOLOO_API" />
+      <sourceFolder url="file://$MODULE_DIR$/../wp-paliz/inc" isTestSource="false" packagePrefix="WP_PALIZ_API" />
+      <sourceFolder url="file://$MODULE_DIR$/../wp-paliz/inc/woocommerce" isTestSource="false" packagePrefix="WP_PALIZ_API" />
+      <sourceFolder url="file://$MODULE_DIR$/../wp-remote-host/inc" isTestSource="false" packagePrefix="WP_REMOTE_HOST" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../wp-includes" isTestSource="false" packagePrefix="PHPMailer" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

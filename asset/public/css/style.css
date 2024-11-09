@@ -1,13 +1,13 @@
 /* carousel */
 
-.carousel{
+.hmd-slider-carousel {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     position: relative;
 }
 
-.carousel .list .item{
+.hmd-slider-carousel .hmd-slider-list .hmd-slider-item {
     width: 270px;
     height: 180px;
     position: absolute;
@@ -22,8 +22,8 @@
     transition: 1s;
 }
 
-.carousel .list .item:nth-child(1),
-.carousel .list .item:nth-child(2){
+.hmd-slider-carousel .hmd-slider-list .hmd-slider-item:nth-child(1),
+.hmd-slider-carousel .hmd-slider-list .hmd-slider-item:nth-child(2) {
     top: 0;
     right: 0;
     transform: translate(0, 0);
@@ -32,116 +32,116 @@
     height: 100%;
 }
 
-.carousel .list .item:nth-child(3){
+.hmd-slider-carousel .hmd-slider-list .hmd-slider-item:nth-child(3) {
     right: 50%;
 }
 
-.carousel .list .item:nth-child(4){
+.hmd-slider-carousel .hmd-slider-list .hmd-slider-item:nth-child(4) {
     right: calc(50% + 283px);
 }
 
-.carousel .list .item:nth-child(5){
+.hmd-slider-carousel .hmd-slider-list .hmd-slider-item:nth-child(5) {
     right: calc(50% + 568px);
 }
 
-.carousel .list .item:nth-child(6){
+.hmd-slider-carousel .hmd-slider-list .hmd-slider-item:nth-child(6) {
     right: calc(65% + 565px);
 }
 
-.carousel .list .item:nth-child(n+7){
+.hmd-slider-carousel .hmd-slider-list .hmd-slider-item:nth-child(n+7) {
     right: calc(55% + 800px);
     opacity: 0;
 }
 
 
-.list .item .hmd-overlay {
+.hmd-slider-list .hmd-slider-item .hmd-overlay {
     opacity: 0;
     display: none;
     width: 100vw;
     height: 100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(274deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6194852941176471) 45%, rgba(0,212,255,0) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(274deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6194852941176471) 45%, rgba(0, 212, 255, 0) 100%);
     animation: animate 1s ease-in-out 0.9s 1 forwards;
 }
 
-.list .item:nth-child(2) .hmd-overlay {
+.hmd-slider-list .hmd-slider-item:nth-child(2) .hmd-overlay {
     display: block;
 }
 
-.list .item .content {
+.hmd-slider-list .hmd-slider-item .hmd-slider-content {
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 100px;
     transform: translateY(-50%);
-    max-width: 80%;
+    max-width: 41%;
     text-align: right;
     color: #fff;
     display: none;
 }
 
-.list .item:nth-child(2) .content{
+.hmd-slider-list .hmd-slider-item:nth-child(2) .hmd-slider-content {
     display: block;
 }
 
-.content .title{
-    font-size: 100px;
+.hmd-slider-content .title {
+    font-size: 46px;
     text-transform: uppercase;
-    color: #14ff72cb;
-    font-weight: bold;
+    color: #fff;
+    font-weight: 900;
     line-height: 1;
-
     opacity: 0;
     animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
 
-.content .name{
-    font-size: 100px;
+.hmd-slider-content .name {
+    font-size: 22px;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 1;
-    text-shadow: 3px 4px 4px rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
 
     opacity: 0;
     animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
 
-.content .des{
+.hmd-slider-content .des {
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 5px;
+    color: #bdbdbd;
 
     opacity: 0;
     animation: animate 1s ease-in-out 0.9s 1 forwards;
 }
 
-.content .btn{
-    margin-left: 5px;
-
+.hmd-slider-content .hmd-slider-btn {
+    margin-right: 5px;
+    margin-top: 60px;
     opacity: 0;
     animation: animate 1s ease-in-out 1.2s 1 forwards;
 }
 
-.content .btn button{
+.hmd-slider-content .hmd-slider-btn a {
     padding: 10px 20px;
-    border: none;
     cursor: pointer;
     font-size: 16px;
     border: 2px solid #fff;
 }
 
-.content .btn button:nth-child(1){
-    margin-right: 15px;
+.hmd-slider-content .hmd-slider-btn a:nth-child(1) {
+    margin-left: 15px;
+    background: #fff;
 }
 
-.content .btn button:nth-child(2){
+.hmd-slider-content .hmd-slider-btn a:nth-child(2) {
     background: transparent;
-    color: #14ff72cb;
+    color: #fff;
     border: 2px solid #fff;
     transition: 0.3s;
 }
 
-.content .btn button:nth-child(2):hover{
+.hmd-slider-content .hmd-slider-btn a:nth-child(2):hover {
     background-color: #14ff72cb;
     color: #fff;
     border-color: #14ff72cb;
@@ -150,13 +150,13 @@
 
 @keyframes animate {
 
-    from{
+    from {
         opacity: 0;
         transform: translate(0, 100px);
         filter: blur(33px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translate(0);
         filter: blur(0);
@@ -166,13 +166,9 @@
 /* Carousel */
 
 
-
-
-
-
 /* next prev arrows */
 
-.arrows{
+.arrows {
     position: absolute;
     top: 58%;
     right: 50%;
@@ -184,11 +180,11 @@
     align-items: center;
 }
 
-.arrows button{
+.arrows button {
     width: 50px;
     height: 50px;
     border-radius: 12px;
-    background-color: #14ff72cb;
+    background-color: #ffffff59;
     color: #fff;
     border: none;
     outline: none;
@@ -199,14 +195,14 @@
     cursor: pointer;
 }
 
-.arrows button:hover{
+.arrows button:hover {
     background: #fff;
     color: #000;
 }
 
 
 /* time running */
-.carousel .timeRunning{
+.hmd-slider-carousel .timeRunning {
     position: absolute;
     z-index: 1000;
     width: 0%;
@@ -219,49 +215,53 @@
 
 @keyframes runningTime {
 
-    from{width: 0%;}
-    to{width: 100%;}
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 
 }
 
 
 /* Responsive Design */
 
-@media screen and (max-width: 999px){
+@media screen and (max-width: 999px) {
 
-    header{
+    header {
         padding-left: 50px;
     }
 
-    .list .item .content{
+    .hmd-slider-list .hmd-slider-item .hmd-slider-content {
         left: 50px;
     }
 
-    .content .title, .content .name{
+    .hmd-slider-content .title, .hmd-slider-content .name {
         font-size: 70px;
     }
 
-    .content .des{
+    .hmd-slider-content .des {
         font-size: 16px;
     }
 
 }
 
-@media screen and (max-width: 690px){
-    header nav a{
+@media screen and (max-width: 690px) {
+    header nav a {
         font-size: 14px;
         margin-right: 0;
     }
 
-    .list .item .content{
+    .hmd-slider-list .hmd-slider-item .hmd-slider-content {
         top: 40%;
     }
 
-    .content .title, .content .name{
+    .hmd-slider-content .title, .hmd-slider-content .name {
         font-size: 45px;
     }
 
-    .content .btn button{
+    .hmd-slider-content .hmd-slider-btn button {
         padding: 10px 15px;
         font-size: 14px;
     }

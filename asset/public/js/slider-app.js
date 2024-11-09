@@ -1,9 +1,9 @@
 var nextBtn = document.querySelector('.next'),
     prevBtn = document.querySelector('.prev'),
-    carousel = document.querySelector('.carousel'),
-    list = document.querySelector('.list'),
-    item = document.querySelectorAll('.item'),
-    runningTime = document.querySelector('.carousel .timeRunning')
+    carousel = document.querySelector('.hmd-slider-carousel'),
+    list = document.querySelector('.hmd-slider-list'),
+    item = document.querySelectorAll('.hmd-slider-item'),
+    runningTime = document.querySelector('.hmd-slider-carousel .timeRunning')
 
 let timeRunning = 3000
 let timeAutoNext = 7000
@@ -32,7 +32,7 @@ function resetTimeAnimation() {
 
 
 function showSlider(type) {
-    let sliderItemsDom = list.querySelectorAll('.carousel .list .item')
+    let sliderItemsDom = list.querySelectorAll('.hmd-slider-carousel .hmd-slider-list .hmd-slider-item')
     if(type === 'next'){
         list.appendChild(sliderItemsDom[0])
         carousel.classList.add('next')
